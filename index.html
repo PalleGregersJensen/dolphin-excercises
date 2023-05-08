@@ -25,11 +25,21 @@
       <p id="login-failed"></p>
     </div>
     <dialog id="login-dialog">
-        <label for="username" id="username" >Username</label><br>
-        <input type="text" id="username" placeholder="Type username here"><br>
-        <label for="password" id="password">Password</label><br>
-        <input type="text" id="password" placeholder="Type password here"><br>
+      <form action="" method="dialog">
+        <label for="username" id="username-label">Username</label><br />
+        <input
+          type="text"
+          id="username-input"
+          placeholder="Type username here"
+        /><br />
+        <label for="password" id="password-label">Password</label><br />
+        <input
+          type="password"
+          id="password-input"
+          placeholder="Type password here"
+        /><br />
         <button id="dialog-button">Ok</button>
+      </form>
     </dialog>
 
     <script src="app.js"></script>

@@ -15,19 +15,20 @@ function guest() {
 function user() {
     console.log("Login som bruger");
     document.querySelector("#login-dialog").showModal();
-    okButtonClicked();
+    showModal();
 }
 
-function okButtonClicked() {
+function showModal() {
     document.querySelector("#dialog-button").addEventListener("click", userLogin)
-    console.log("ok button clicked");
+    console.log("show modal vises");
 }
 
 function userLogin() {  
+    console.log("ok button clicked");
     if (
-    document.querySelector("#username").value === "admin" ||
-    document.querySelector("#username").value === "user" ||
-    document.querySelector("#username").value === "coach"
+    document.querySelector("#username-input").value === "admin" ||
+    document.querySelector("#username-input").value === "user" ||
+    document.querySelector("#username-input").value === "coach"
   ) {
     console.log("login");
   } else {
