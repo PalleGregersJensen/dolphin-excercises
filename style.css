@@ -1,0 +1,42 @@
+#dolphin-picture {
+    opacity: 1;
+    width: 30%;
+    height: 30%;
+    margin-top: 5%;
+    margin-left: 40%; 
+}
+
+
+.rotation {
+  animation-name: rotation;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes rotation {
+  0% {
+    rotate: 0deg;
+  }
+
+  50% {
+    rotate: 180deg;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
+
+
+#user-login {
+    background-color: red;
+    margin-top: 5%;
+    margin-left: 50%;
+}
+
+#guest-login {
+    background-color: green;
+}
+
