@@ -14,4 +14,6 @@ function guest() {
 
 function user() {
     console.log("Login som bruger");
+    document.querySelector("#login-dialog").showModal();
 }
+
