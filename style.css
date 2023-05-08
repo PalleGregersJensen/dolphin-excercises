@@ -59,3 +59,11 @@
   font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
+/* login failed */
+#login-failed {
+    font-size: x-large;
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+
+}
