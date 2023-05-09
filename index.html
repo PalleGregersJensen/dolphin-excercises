@@ -9,6 +9,10 @@
     <title>Document</title>
   </head>
   <body>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="index.html">Forside</a>
+    </nav>
     <header>
       <h2 id="headline">Velkommen til Svømmeklubben Delfinen</h2>
     </header>
@@ -22,7 +26,6 @@
       />
       <button id="user-login">Login</button>
       <button id="guest-login">Fortsæt som gæst</button>
-      <p id="login-failed"></p>
     </div>
     <dialog id="login-dialog">
       <form action="" method="dialog">
@@ -41,7 +44,7 @@
         <button id="dialog-button">Ok</button>
       </form>
     </dialog>
-
-    <script src="app.js"></script>
+    <p id="login-failed" class="hidden"></p>
+    <script src="app.js" type="module"></script>
   </body>
 </html>

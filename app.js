@@ -13,26 +13,30 @@ function guest() {
 }
 
 function user() {
-    console.log("Login som bruger");
-    document.querySelector("#login-dialog").showModal();
-    showModal();
+  console.log("Login som bruger");
+  document.querySelector("#login-dialog").showModal();
+  showModal();
 }
 
 function showModal() {
-    document.querySelector("#dialog-button").addEventListener("click", userLogin)
-    console.log("show modal vises");
+  document.querySelector("#dialog-button").addEventListener("click", userLogin);
+  console.log("show modal vises");
 }
 
-function userLogin() {  
-    console.log("ok button clicked");
-    if (
+function userLogin() {
+  console.log("ok button clicked");
+  if (
     document.querySelector("#username-input").value === "admin" ||
     document.querySelector("#username-input").value === "user" ||
     document.querySelector("#username-input").value === "coach"
   ) {
     console.log("login");
+    window.location.href = "about.html";
+    
   } else {
+    document.querySelector("#login-failed").classList.remove("hidden");
     document.querySelector("#login-failed").textContent =
       "Login fejlede. Prøv igen";
   }
 }
+
